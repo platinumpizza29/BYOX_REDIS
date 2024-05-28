@@ -31,6 +31,17 @@ const server = net.createServer((connection) => {
               }
             }
             break;
+          case "del": {
+            if (reply.length === 2) {
+              const key = reply[1];
+              if (store[key]) {
+                delete store[key];
+                connection.write("+OK\r\n");
+              } else {
+                connection.write("$-1\r\n");
+              }
+            }
+          }
         }
       },
       returnError: (error) => {
