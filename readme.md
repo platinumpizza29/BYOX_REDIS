@@ -37,5 +37,5 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/your-username/simple-redis-node.git
-   cd simple-redis-node
+   git clone https://github.com/platinumpizza29/BYOX_REDIS.git
+   cd BYOX_REDIS
